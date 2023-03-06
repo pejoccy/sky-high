@@ -8,7 +8,7 @@ export const useFetchData = () => {
   useEffect(() => {
     if (!salesOrders.length && !isLoading) {
       const getData = () => {
-        // setIsLoading(true);
+        setIsLoading(true);
         client.post('/DEV/stub', {
           angular_test: "angular-developer"
         })
